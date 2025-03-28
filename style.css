@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.73;
+    scroll-behavior: smooth;
+    
+    /* background-color: black; */
+}
+.header{
+    max-width: 1600px;
+    padding: 20px 0;
+}
+.container{
+    max-width:1470px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+a{
+    text-decoration: none;
+
+}
+ul li{
+    list-style:none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.navbox{
+    max-width: 1470px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    display: block;
+    width: 158px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li a{
+    padding: 0px 20px;
+}
+.navbar a{
+    color: #52504E;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.navbar a:hover{
+    color:#D09172;
+}
+.nav-first:visited{
+    color:#D09172;
+}
+.btn{
+    padding: 12px 13px;
+    border: none;
+    background:linear-gradient(rgba(244, 224, 122, 1),
+    rgba(193, 150, 60, 1));
+    border-radius: 40px;
+    color: #171615;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background: #ffffff;
+}
+.btn i{
+    padding: 5px 5px;
+}
+.main{
+    max-width:100%;
+}
+.banner{
+    max-width:100%;
+    min-height: 700px;
+    background: url(./images/woman-exercing-gym-holding-yoga-mat\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+}
+.content{
+    max-width: 520px;
+    min-height: 610px;
+    transform: translate(100px,100px);
+}
+.row{
+    max-width:100%;
+    /* min-height: 500px; */
+    padding: 0px 15px;
+}
+.col{
+    width: 100%;
+     /* height: 100%;  */
+} 
+#spa{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;text-transform: uppercase;
+}
+.content h1{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+.content span {
+    color: #D09172;
+    word-spacing: 3px;
+}
+.content p{
+    color: #ffffff;
+}
+/* .bnr-btn{
+    margin-top: 50px;
+} */
+#check{
+    display: none;
+}
+.menu-btn{
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+#span{
+    color:#ffffff;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#check:checked ~ .navbar ul{
+    right: 0;
+}
+.bnrbtn{
+    border-radius: 100%;
+    padding: 6px 8px;
+    background:#F4E07A;
+    margin-left: 10px;
+}
+.bnrbtn i{
+    color:#171615;
+}
+.section{
+    max-width: 100%;
+    padding: 80px 0;
+}
+.container{
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.con2-div1{
+    max-width: 350px;
+    margin: auto;
+    text-transform:uppercase ;
+    text-align: center;
+    color: #171615;
+    line-height: 1.7px;
+    font-size: 20px;
+    
+}
+.span{
+    color: #D09172;
+}
+.con2-div2{
+    max-width: 748px;
+    margin: auto;
+    
+}
+.con2-div2 p{
+    text-align: center;
+    padding: 30px 0;
+    color: #616161;
+    font-size: 16px;
+
+}
+.con2-row{
+    max-width: 100%;
+    display: flex;
+    padding: 0px 50px;
+    flex-wrap: wrap;
+}
+.con2-col{
+    width: 33%;
+    padding: 0px 35px;
+}
+.card img{
+    border-radius: 20px;
+}
+.card h3{
+    font-size: 16px;
+    color: #171615;
+    margin-bottom: 10px;
+
+}
+.card a{
+    color:#C1963C;
+    margin: 20px 0;
+}
+.card p{
+    margin-bottom: 10px;
+}
+.card h4{
+    display: none;
+}
+ #sec-p{
+    margin-top: 27px;
+} 
+@media(max-width:991px){
+    .navbar ul{
+        max-width: 300px;
+        width: 100%;
+        position: fixed;
+        top: 10%;
+        height: calc(100% - 10%);
+        right: -100%;
+        flex-direction: column;
+        background: rgb(182, 104, 104);
+        color: #C1963C;
+    }
+    .navbar a{
+        color: #fff;
+        /* padding: ; */
+    }
+    .navbar a:hover{
+        color: green;
+    }
+    .menu-btn{
+        display: block;
+        color: #67857f;
+        font-size: 20px;
+    }
+    #check:checked~.menu-btn i::before{
+        content: "\f00d";
+        position: absolute;
+        right: 5px;
+        top: 7px;
+    }
+    #sec-p{
+        margin-top: 35px;
+    }
+    
+}
+@media(max-width:375px) {
+    #btn{
+        display: none;
+    }
+    .content{
+        margin-left: 0;
+        transform: translate(20px,100px);
+
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .con2-div1{
+        text-align: center;
+    }
+    .con2-col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .con2-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        width:100%;
+    }
+}
